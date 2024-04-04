@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+body {
+	background-color: black;
+}
+
+.main {
+	background-image: url("assets/images/background.jpg");
+	background-position: center;
+	background-size: max(1200px, 100vw);
+	background-repeat: no-repeat;
+	height: 700px;
+	position: relative;
+}
+
+.main .box {
+	height: 700px;
+	width: 100%;
+	opacity: 0.69;
+	position: absolute;
+	top: 0;
+	background-color: black;
+}
+
+nav {
+	max-width: 77vw;
+	justify-content: space-between;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	height: 92px;
+}
+
+nav img {
+	color: #e50914;
+	height: 40px;
+	position: relative;
+	z-index: 10;
+}
+
+.nav-top-btn {
+	display: flex;
+	gap: 25px;
+}
+
+.select {
+	z-index: 10;
+	display: flex;
+	position: relative;
+	background-color: rgba(60, 60, 60, 0.3);
+}
+
+.footer-lang {
+	display: block;
+	width: 126px;
+	height: 32px;
+	margin: 30px 0;
+}
+
+.select svg {
+	position: absolute;
+	top: calc(25%);
+	right: 10px;
+}
+
+.select .svg1 {
+	position: absolute;
+	top: calc(25%);
+	left: 10px;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	padding: 0 12px;
+	color: white;
+	background-color: transparent;
+	z-index: 10;
+	height: inherit;
+	width: 126px;
+	text-align: center;
+	border-radius: 4px;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+select option {
+	color: black;
+}
+
+nav button {
+	height: 32px;
+	position: relative;
+	z-index: 10;
+}
+
+.hero {
+	font-family: "Roboto", sans-serif;
+	height: calc(100% - 100px);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	color: white;
+	position: relative;
+	gap: 23px;
+	padding: 0 30px;
+}
+
+.hero > :nth-child(1) {
+	font-family: "Roboto", sans-serif;
+	font-weight: bolder;
+	font-size: 48px;
+	text-align: center;
+}
+
+.hero > :nth-child(2) {
+	font-weight: 400;
+	font-size: 24px;
+	text-align: center;
+}
+
+.hero > :nth-child(3),
+.hero .faq-span {
+	font-weight: 400;
+	font-size: 20px;
+	text-align: center;
+}
+
+.faq .hero {
+	margin-top: 50px;
+	gap: 15px;
+}
+
+.separation {
+	height: 7px;
+	background-color: rgb(46, 44, 44);
+	position: relative;
+	z-index: 20;
+}
+
+.btn {
+	padding: 3px 16px;
+	font-weight: 500;
+	color: white;
+	background-color: rgba(248, 243, 243, 0.021);
+	border-radius: 4px;
+	border: 1px solid white;
+	cursor: pointer;
+	border: 1px solid gray;
+	transition: all 0.4s;
+}
+
+.btn-red {
+	background-color: #e50914;
+	color: white;
+	padding: 3px 24px;
+	font-size: 20px;
+	border-radius: 4px;
+	font-weight: 500;
+	border-style: none;
+}
+
+.btn-red-sm {
+	background-color: #e50914;
+	color: white;
+	border-style: none;
+}
+
+.btn-red:hover,
+.btn-red-sm:hover {
+	background: rgb(193, 17, 25);
+}
+
+.hero-buttons {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 16px;
+}
+
+.hero input,
+.hero-buttons button {
+	height: 56px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	text-wrap: nowrap;
+}
+
+.hero input {
+	padding: 8px 101px 8px 14px;
+	color: white;
+	font-size: 16px;
+	border-radius: 4px;
+	background-color: rgba(23, 23, 23, 0.7);
+	border: 1px solid rgba(246, 238, 238, 0.5);
+	width: 360px;
+}
+
+.hero input::placeholder {
+	transition: all 0.4s;
+	color: rgb(215, 215, 215);
+}
+
+.hero input:focus::placeholder {
+	font-size: 12px;
+	position: absolute;
+	top: 7px;
+}
+
+.first {
+	display: flex;
+	width: 70vw;
+	margin: auto;
+	color: white;
+	justify-content: center;
+	align-items: center;
+}
+
+.secImg {
+	position: relative;
+}
+
+.secImg img {
+	width: 555px;
+	position: relative;
+	z-index: 10;
+}
+
+.secImg video {
+	position: absolute;
+	top: 20%;
+	right: 80px;
+	width: 400px;
+}
+
+.secImg .video2 {
+	top: 8%;
+	right: 100px;
+	width: 350px;
+}
+
+.first-text span {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 0;
+}
+
+.first-text :nth-child(1) {
+	font-size: 48px;
+	font-weight: bolder;
+}
+
+.first-text :nth-child(2) {
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.faq h2 {
+	text-align: center;
+	font-size: 48px;
+	margin-bottom: 20px;
+}
+
+.faq {
+	background: black;
+	color: white;
+	padding: 34px;
+}
+
+.faqbox:hover {
+	background-color: #414141;
+	color: white;
+}
+
+.faqbox svg {
+	filter: invert(1);
+}
+
+.faqbox,
+.answer {
+	transition: all 0.15s;
+	font-size: 24px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #2d2d2d;
+	padding: 24px;
+	max-width: 75vw;
+	margin: 10px auto 1px;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.answer {
+	margin: 0 auto;
+	display: none;
+}
+
+footer {
+	color: #b3b3b3;
+	max-width: 70vw;
+	margin: auto;
+	padding: 40px;
+}
+
+footer .questions {
+	padding: 34px 0;
+}
+
+.questions span {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.footer {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	color: #b3b3b3;
+}
+
+.footer a {
+	font-size: 14px;
+	color: #b3b3b3;
+	text-wrap: nowrap;
+}
+
+.footer-item {
+	display: flex;
+	flex-direction: column;
+	gap: 23px;
+}
+
+.stranger-things {
+	position: relative;
+}
+
+.stranger-things-div {
+	position: absolute;
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	background-color: black;
+	border: 2px solid rgba(128, 128, 128, 0.7);
+	border-radius: 0.75rem;
+	box-shadow: 0 0 2em 0 rgb(0, 0, 0);
+	padding: 8px 12px;
+	height: fit-content;
+	width: 280px;
+	left: 12%;
+	bottom: 30px;
+	z-index: 10;
+}
+
+.stranger-things-img {
+	width: 57px;
+	height: 80px;
+}
+
+.stranger-things-text {
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	text-align: left;
+}
+
+.stranger-things-text :nth-child(1) {
+	font-weight: 500;
+}
+
+.stranger-things-text :nth-child(2) {
+	font-size: 14px;
+	color: rgb(0, 113, 235);
+}
+
+.stranger-things-download {
+	width: 45px;
+	position: absolute;
+	right: 12px;
+}
